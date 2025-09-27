@@ -1,0 +1,140 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Headings */
+h1 {
+    color: #4A90E2; /* Vibrant blue */
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #9B59B6; /* Rich purple */
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+h3 {
+    color: #E74C3C; /* Warm red */
+    font-size: 20px;
+    margin: 8px 0;
+}
+
+h4 {
+    color: #2ECC71; /* Fresh green */
+    font-size: 18px;
+    margin: 8px 0;
+}
+
+/* Image */
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%; /* Circular avatar for modern look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Intro Section */
+#gioithieu {
+    background: linear-gradient(135deg, #F0F4C3 0%, #C8E6C9 100%); /* Subtle lime to green gradient */
+    padding: 30px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#guithongtin {
+    background: linear-gradient(135deg, #FFECB3 0%, #FFCCBC 100%); /* Warm yellow to peach gradient */
+    background-size: cover;
+    padding: 30px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Styling */
+table, th, td {
+    border: 1px solid #34495E; /* Dark slate for borders */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498DB; /* Bright blue header */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ECF0F1; /* Light gray for alternating rows */
+}
+
+tr:hover {
+    background-color: #D5DBDB; /* Hover effect for table rows */
+}
+
+/* Navigation and Footer */
+nav, footer {
+    background: linear-gradient(90deg, #81D4FA 0%, #4FC3F7 100%); /* Sky blue gradient */
+    color: #1A237E; /* Deep navy text */
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: #1A237E;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #E91E63; /* Pink hover effect */
+    text-decoration: underline;
+}
+
+/* Form Styling */
+form input, form textarea {
+    margin: 8px 0;
+    padding: 10px;
+    width: 100%;
+    max-width: 400px;
+    border: 1px solid #7F8C8D;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(90deg, #E67E22 0%, #F1C40F 100%); /* Orange to yellow gradient */
+    border: none;
+    padding: 12px 25px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #D35400 0%, #F39C12 100%); /* Darker gradient on hover */
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    margin: 10px 0 10px 20px;
+}
+
+li {
+    margin: 5px 0;
+}
