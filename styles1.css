@@ -8,40 +8,43 @@
 
 /* Headings */
 h1 {
-    color: #4A90E2; /* Vibrant blue */
+    color: #4A90E2;
     font-size: 28px;
     margin-bottom: 15px;
 }
 
 h2 {
-    color: #9B59B6; /* Rich purple */
+    color: #9B59B6;
     font-size: 24px;
     margin: 10px 0;
 }
 
 h3 {
-    color: #E74C3C; /* Warm red */
+    color: #E74C3C;
     font-size: 20px;
     margin: 8px 0;
 }
 
 h4 {
-    color: #2ECC71; /* Fresh green */
+    color: #2ECC71;
     font-size: 18px;
     margin: 8px 0;
 }
 
-/* Image */
+/* Avatar Image */
 img {
     display: block;
-    margin: 0 auto;
-    border-radius: 50%; /* Circular avatar for modern look */
+    margin: 0 auto 20px;
+    border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 150px; /* Giảm kích thước xuống 150px */
+    height: auto; /* Duy trì tỷ lệ */
+    object-fit: cover; /* Giữ phần giữa, cắt bớt viền nếu cần */
 }
 
 /* Intro Section */
 #gioithieu {
-    background: linear-gradient(135deg, #F0F4C3 0%, #C8E6C9 100%); /* Subtle lime to green gradient */
+    background: linear-gradient(135deg, #F0F4C3 0%, #C8E6C9 100%);
     padding: 30px;
     margin: 20px;
     border-radius: 10px;
@@ -50,7 +53,7 @@ img {
 
 /* Contact Section */
 #guithongtin {
-    background: linear-gradient(135deg, #FFECB3 0%, #FFCCBC 100%); /* Warm yellow to peach gradient */
+    background: linear-gradient(135deg, #FFECB3 0%, #FFCCBC 100%);
     background-size: cover;
     padding: 30px;
     margin: 20px;
@@ -61,7 +64,7 @@ img {
 
 /* Table Styling */
 table, th, td {
-    border: 1px solid #34495E; /* Dark slate for borders */
+    border: 1px solid #34495E;
     border-collapse: collapse;
 }
 
@@ -71,22 +74,22 @@ th, td {
 }
 
 th {
-    background-color: #3498DB; /* Bright blue header */
+    background-color: #3498DB;
     color: white;
 }
 
 tr:nth-child(even) {
-    background-color: #ECF0F1; /* Light gray for alternating rows */
+    background-color: #ECF0F1;
 }
 
 tr:hover {
-    background-color: #D5DBDB; /* Hover effect for table rows */
+    background-color: #D5DBDB;
 }
 
 /* Navigation and Footer */
 nav, footer {
-    background: linear-gradient(90deg, #81D4FA 0%, #4FC3F7 100%); /* Sky blue gradient */
-    color: #1A237E; /* Deep navy text */
+    background: linear-gradient(90deg, #81D4FA 0%, #4FC3F7 100%);
+    color: #1A237E;
     padding: 15px;
     text-align: center;
     font-weight: bold;
@@ -100,7 +103,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #E91E63; /* Pink hover effect */
+    color: #E91E63;
     text-decoration: underline;
 }
 
@@ -116,7 +119,7 @@ form input, form textarea {
 }
 
 form input[type="submit"] {
-    background: linear-gradient(90deg, #E67E22 0%, #F1C40F 100%); /* Orange to yellow gradient */
+    background: linear-gradient(90deg, #E67E22 0%, #F1C40F 100%);
     border: none;
     padding: 12px 25px;
     cursor: pointer;
@@ -126,7 +129,7 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: linear-gradient(90deg, #D35400 0%, #F39C12 100%); /* Darker gradient on hover */
+    background: linear-gradient(90deg, #D35400 0%, #F39C12 100%);
 }
 
 /* List Styling */
