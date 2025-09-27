@@ -84,4 +84,129 @@ form select {
     padding: 10px;
     border: 2px solid #FFFFFF;
     border-radius: 8px;
-    background: rgba(255, 255
+    background: rgba(255, 255, 255, 0.9); /* Nền trong suốt nhẹ */
+    color: #333333;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form textarea:focus,
+form select:focus {
+    border-color: #E91E63; /* Viền hồng khi focus */
+    box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
+    outline: none;
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+form .radio-group,
+form .checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Khoảng cách giữa các lựa chọn */
+}
+
+form .radio-group label,
+form .checkbox-group label {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: normal;
+}
+
+form input[type="submit"] {
+    background: linear-gradient(90deg, #E67E22 0%, #F1C40F 100%);
+    border: none;
+    padding: 12px 25px;
+    color: white;
+    font-weight: bold;
+    border-radius: 25px; /* Bo tròn nút submit */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: auto;
+    align-self: center;
+}
+
+form input[type="submit"]:hover {
+    background: linear-gradient(90deg, #D35400 0%, #F39C12 100%);
+    transform: translateY(-2px); /* Hiệu ứng nâng lên khi hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Table Styling */
+table, th, td {
+    border: 1px solid #34495E;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #3498DB;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ECF0F1;
+}
+
+tr:hover {
+    background-color: #D5DBDB;
+}
+
+/* Navigation and Footer */
+nav, footer {
+    background: linear-gradient(90deg, #81D4FA 0%, #4FC3F7 100%);
+    color: #1A237E;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a {
+    color: #1A237E;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #E91E63;
+    text-decoration: underline;
+}
+
+/* List Styling */
+ul {
+    list-style-type: square;
+    margin: 10px 0 10px 20px;
+}
+
+li {
+    margin: 5px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 10px;
+    }
+    form input[type="text"],
+    form input[type="email"],
+    form textarea,
+    form select {
+        font-size: 13px;
+    }
+    form .radio-group,
+    form .checkbox-group {
+        gap: 10px;
+    }
+}
