@@ -37,9 +37,9 @@ img {
     margin: 0 auto 20px;
     border-radius: 50%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 150px; /* Giảm kích thước xuống 150px */
-    height: auto; /* Duy trì tỷ lệ */
-    object-fit: cover; /* Giữ phần giữa, cắt bớt viền nếu cần */
+    max-width: 150px;
+    height: auto;
+    object-fit: cover;
 }
 
 /* Intro Section */
@@ -53,91 +53,35 @@ img {
 
 /* Contact Section */
 #guithongtin {
-    background: linear-gradient(135deg, #FFECB3 0%, #FFCCBC 100%);
-    background-size: cover;
+    background: linear-gradient(135deg, #A3D8F4 0%, #6DD5FA 100%); /* Gradient xanh nhạt */
     padding: 30px;
     margin: 20px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-/* Table Styling */
-table, th, td {
-    border: 1px solid #34495E;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 12px;
-    text-align: left;
-}
-
-th {
-    background-color: #3498DB;
-    color: white;
-}
-
-tr:nth-child(even) {
-    background-color: #ECF0F1;
-}
-
-tr:hover {
-    background-color: #D5DBDB;
-}
-
-/* Navigation and Footer */
-nav, footer {
-    background: linear-gradient(90deg, #81D4FA 0%, #4FC3F7 100%);
-    color: #1A237E;
-    padding: 15px;
-    text-align: center;
-    font-weight: bold;
-}
-
-nav a {
-    color: #1A237E;
-    text-decoration: none;
-    margin: 0 15px;
-    font-size: 16px;
-}
-
-nav a:hover {
-    color: #E91E63;
-    text-decoration: underline;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    color: #FFFFFF; /* Chữ trắng để nổi bật trên nền gradient */
 }
 
 /* Form Styling */
-form input, form textarea {
-    margin: 8px 0;
-    padding: 10px;
-    width: 100%;
-    max-width: 400px;
-    border: 1px solid #7F8C8D;
-    border-radius: 5px;
-    font-size: 14px;
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các nhóm input */
 }
 
-form input[type="submit"] {
-    background: linear-gradient(90deg, #E67E22 0%, #F1C40F 100%);
-    border: none;
-    padding: 12px 25px;
-    cursor: pointer;
-    color: white;
+form label {
     font-weight: bold;
-    border-radius: 5px;
+    margin-bottom: 5px;
+    display: block;
 }
 
-form input[type="submit"]:hover {
-    background: linear-gradient(90deg, #D35400 0%, #F39C12 100%);
-}
-
-/* List Styling */
-ul {
-    list-style-type: square;
-    margin: 10px 0 10px 20px;
-}
-
-li {
-    margin: 5px 0;
-}
+form input[type="text"],
+form input[type="email"],
+form textarea,
+form select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #FFFFFF;
+    border-radius: 8px;
+    background: rgba(255, 255
