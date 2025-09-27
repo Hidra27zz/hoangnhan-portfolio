@@ -53,12 +53,12 @@ img {
 
 /* Contact Section */
 #guithongtin {
-    background: linear-gradient(135deg, #A3D8F4 0%, #6DD5FA 100%); /* Gradient xanh nhạt */
+    background: linear-gradient(135deg, #A3D8F4 0%, #6DD5FA 100%);
     padding: 30px;
     margin: 20px;
     border-radius: 15px;
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-    color: #FFFFFF; /* Chữ trắng để nổi bật trên nền gradient */
+    color: #FFFFFF;
 }
 
 /* Form Styling */
@@ -67,7 +67,7 @@ form {
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Khoảng cách giữa các nhóm input */
+    gap: 20px; /* Tăng khoảng cách giữa các nhóm input */
 }
 
 form label {
@@ -81,10 +81,10 @@ form input[type="email"],
 form textarea,
 form select {
     width: 100%;
-    padding: 10px;
+    padding: 12px;
     border: 2px solid #FFFFFF;
     border-radius: 8px;
-    background: rgba(255, 255, 255, 0.9); /* Nền trong suốt nhẹ */
+    background: rgba(255, 255, 255, 0.9);
     color: #333333;
     font-size: 14px;
     transition: all 0.3s ease;
@@ -94,22 +94,17 @@ form input[type="text"]:focus,
 form input[type="email"]:focus,
 form textarea:focus,
 form select:focus {
-    border-color: #E91E63; /* Viền hồng khi focus */
+    border-color: #E91E63;
     box-shadow: 0 0 8px rgba(233, 30, 99, 0.5);
     outline: none;
-}
-
-form input[type="radio"],
-form input[type="checkbox"] {
-    margin-right: 10px;
-    vertical-align: middle;
 }
 
 form .radio-group,
 form .checkbox-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px; /* Khoảng cách giữa các lựa chọn */
+    gap: 25px; /* Tăng khoảng cách giữa các lựa chọn */
+    align-items: center;
 }
 
 form .radio-group label,
@@ -120,13 +115,18 @@ form .checkbox-group label {
     font-weight: normal;
 }
 
+form input[type="radio"],
+form input[type="checkbox"] {
+    margin-right: 8px; /* Khoảng cách giữa input và label */
+}
+
 form input[type="submit"] {
-    background: linear-gradient(90deg, #E67E22 0%, #F1C40F 100%);
+    background: linear-gradient(90deg, #FF9800 0%, #FFC107 100%); /* Gradient cam vàng hài hòa */
     border: none;
-    padding: 12px 25px;
+    padding: 12px 30px;
     color: white;
     font-weight: bold;
-    border-radius: 25px; /* Bo tròn nút submit */
+    border-radius: 25px;
     cursor: pointer;
     transition: all 0.3s ease;
     width: auto;
@@ -134,8 +134,8 @@ form input[type="submit"] {
 }
 
 form input[type="submit"]:hover {
-    background: linear-gradient(90deg, #D35400 0%, #F39C12 100%);
-    transform: translateY(-2px); /* Hiệu ứng nâng lên khi hover */
+    background: linear-gradient(90deg, #F57C00 0%, #FFCA28 100%);
+    transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
@@ -207,6 +207,9 @@ li {
     }
     form .radio-group,
     form .checkbox-group {
-        gap: 10px;
+        gap: 15px;
+    }
+    form input[type="submit"] {
+        width: 100%;
     }
 }
